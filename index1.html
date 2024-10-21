@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Register Form</h1>
+        <p>Phasellus feugiat est sed mi semper, vitae consectetur diam lacinia.</p>
+
+        <form>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Surname" required>
+            <input type="text" placeholder="Mobil number or email address" required>
+            <input type="password" placeholder="New Password" required>
+
+            <label for="dob">Date of birth</label>
+            <div class="dob-container">
+                <select name="day" id="day">
+                    <option value="27">27</option>
+                    <!-- Add other days as needed -->
+                </select>
+                <select name="month" id="month">
+                    <option value="Nov">Nov</option>
+                    <!-- Add other months as needed -->
+                </select>
+                <select name="year" id="year">
+                    <option value="2022">2022</option>
+                    <!-- Add other years as needed -->
+                </select>
+            </div>
+
+            <div class="gender-container">
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="custom"> Custom</label>
+            </div>
+
+            <div class="checkbox-container">
+                <input type="checkbox" required>
+                <label>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>. I have read the <a href="#">KVKK Clarification Text</a> and I accept the processing of my personal data in accordance with the <a href="#">Explicit Consent Text</a>.</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Sign Up</button>
+        </form>
+    </div>
+
+</body>
+</html>
